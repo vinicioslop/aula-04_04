@@ -16,37 +16,76 @@
   align-items: center;
 }
 
-.container h1 {
+h1 {
   font-size: 42px;
 
   margin-bottom: 10px;
 }
 
-.container #formulario {
+#formulario {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
-  height: 400px;
-  width: 400px;
+  height: 500px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   background-color: purple;
   color: white;
 }
 
-.container #formulario input,
+#formulario #grupo_nome_sobrenome {
+  display: flex;
+  flex-direction: row;
+}
+
+#formulario #grupo_nome_sobrenome #nome,
+#sobrenome {
+  display: flex;
+  flex-direction: row;
+}
+
+#formulario #grupo_opiniao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#formulario #grupo_opiniao textarea {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+
+    border-radius: 5px;
+    border: 1px solid white;
+
+    background-color: transparent;
+    color: white;
+}
+
+#formulario #grupo_botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 75px;
+}
+
+#formulario input,
 button {
   margin-left: 30px;
   margin-right: 30px;
 }
 
-.container #formulario label {
+#formulario label {
   margin-left: 30px;
 
   font-size: 20px;
 }
 
-.container #formulario input {
+#formulario input {
   font-size: 20px;
 
   height: 30px;
@@ -60,7 +99,7 @@ button {
   padding-bottom: 2px;
 }
 
-.container #formulario button {
+#formulario button {
   height: 40px;
 
   font-size: 18px;
@@ -70,37 +109,23 @@ button {
   border-radius: 5px;
 }
 
-.container #formulario button:hover {
+#formulario button:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.container #formulario a {
+#formulario a {
   display: flex;
   align-self: center;
+
+  text-decoration: none;
 
   color: whitesmoke;
 }
 
-.container #formulario a:hover {
+#formulario a:hover {
   color: deeppink;
   transition: 0.3s;
-}
-
-.container #formulario #grupo_login, #grupo_senha {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  height: 70px;
-}
-
-.container #formulario #grupo_botao {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  height: 75px;
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="sign.css" />
+
+    <title>Form fraco</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>CADASTRO</h1>
+      <form id="formulario" action="GET">
+        <div id="grupo_nome_sobrenome">
+          <div id="nome">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Digite seu nome" />
+          </div>
+          <div id="sobrenome">
+            <label for="sobrenome">Sobrenome</label>
+            <input id="sobrenome" type="text" placeholder="Digite seu sobrenome" />
+          </div>
+        </div>
+
+        <div id="grupo_opiniao">
+            <label for="opiniao">Dê sua opinião sobre o Vasco</label>
+            <textarea name="opiniao" id="opiniao" cols="30" rows="5"></textarea>
+        </div>
+
+        <div id="grupo_concordo">
+            <input type="checkbox" name="concordo" id="concordo" checked>
+            <label for="concordo">Li e concordo com a aula</label>
+        </div>
+
+        <div id="grupo_botao">
+          <button type="submit">Criar</button>
+          <a href="index.html">Já tenho uma conta</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
